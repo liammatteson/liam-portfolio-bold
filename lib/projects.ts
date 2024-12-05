@@ -5,7 +5,7 @@ export const projects: Project[] = [
     title: "Copilot Cash Flow",
     description: "Financial management platform",
     href: "/projects/copilot-cash-flow",
-    imagePath: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    imagePath: "/images/CashFlow.jpg",
     year: "2024",
     variant: 'primary',
     buttonText: 'Read essay'

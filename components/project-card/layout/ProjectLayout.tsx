@@ -12,7 +12,7 @@ export function ProjectLayout({ children }: ProjectLayoutProps) {
   return (
     <div className="min-h-screen">
       <Nav />
-      <div className="max-w-[528px] mx-auto">
+      <div className="max-w-[600px] mx-auto">
         <BlurTransition>
           {children}
         </BlurTransition>

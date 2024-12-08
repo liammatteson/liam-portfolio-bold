@@ -12,7 +12,7 @@ export function PageLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Nav />
-      <div className="max-w-[528px] mx-auto px-6">
+      <div className="max-w-[600px] mx-auto px-6">
         {isHomePage && <Profile />}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

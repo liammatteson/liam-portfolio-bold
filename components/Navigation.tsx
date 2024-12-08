@@ -74,7 +74,7 @@ export function Navigation() {
               {hoveredLink === link && (
                 <motion.div
                   layoutId="highlight"
-                  className="absolute inset-0 bg-[#E8EAEE] rounded-[2px] -z-10"
+                  className="absolute inset-0 bg-[#E8EAEE] rounded-[4px] -z-10"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}

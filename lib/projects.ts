@@ -6,7 +6,7 @@ export const projects: Project[] = [
     description: "Financial management platform",
     href: "/projects/copilot-cash-flow",
     imagePath: "/images/CashFlow.jpg",
-    year: "Product Design · Prototyping",
+    year: "2024",
     variant: 'primary',
     buttonText: 'Read essay'
   },
@@ -14,7 +14,7 @@ export const projects: Project[] = [
     title: "Tags",
     description: "Smart transaction categorization",
     href: "/projects/copilot-tags",
-    imagePath: "https://images.unsplash.com/photo-1512075135822-67cdd9dd7314",
+    imagePath: "/images/Tags.jpg",
     year: "2024",
     buttonText: 'Read essay'
   },
@@ -27,20 +27,20 @@ export const projects: Project[] = [
     buttonText: 'View samples'
   },
   {
-    title: "Connections",
-    description: "Account management system",
-    href: "/projects/copilot-connections",
-    imagePath: "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
-    year: "2024",
+    title: "Intelligence",
+    description: "Predictive insights platform",
+    href: "/projects/copilot-intelligence",
+    imagePath: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    year: "2023",
     buttonText: 'View samples'
   },
   {
     title: "Mint Import",
     description: "Data migration platform",
     href: "/projects/copilot-mint-import",
-    imagePath: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d",
+    imagePath: "/images/projects/mint-import.png",
     year: "2024",
-    buttonText: 'Read essay'
+    buttonText: 'View samples'
   },
   {
     title: "Onboarding",
@@ -51,59 +51,81 @@ export const projects: Project[] = [
     buttonText: 'View samples'
   },
   {
-    title: "Intelligence",
-    description: "AI-powered insights",
-    href: "/projects/copilot-intelligence",
-    imagePath: "https://images.unsplash.com/photo-1488229297570-58520851e868",
-    year: "2023",
-    buttonText: 'Read essay'
+    title: "Antimetal",
+    description: "Design Lead · 2023-24",
+    href: "/projects/antimetal",
+    imagePath: "/images/antimetal.jpg",
+    year: "2024",
+    isHeader: true
   },
   {
-    title: "Antimetal Launch",
-    description: "Product launch campaign",
+    title: "Dashboard and Guardrails",
+    description: "A new approach to managing LLM risk.",
     href: "/projects/antimetal-launch",
-    imagePath: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+    imagePath: "/images/antimetal-launch.jpg",
+    year: "2024",
+    tags: ["Product Design", "AI/ML", "Enterprise"],
+    category: "intelligence"
+  },
+  {
+    title: "Vanta",
+    description: "Product Designer · 2021-23",
+    href: "/projects/vanta",
+    imagePath: "/images/vanta.jpg",
     year: "2023",
-    buttonText: 'View samples'
+    isHeader: true
+  },
+  {
+    title: "Platform",
+    description: "Rebuilding Vanta's core product experience.",
+    href: "/projects/vanta-platform",
+    imagePath: "/images/vanta-platform.jpg",
+    year: "2023",
+    tags: ["Product Design", "Enterprise", "Security"],
+    category: "intelligence"
+  },
+  {
+    title: "Home",
+    description: "A new homepage for security and compliance.",
+    href: "/projects/vanta-home",
+    imagePath: "/images/vanta-home.jpg",
+    year: "2022",
+    tags: ["Product Design", "Enterprise", "Security"],
+    category: "intelligence"
+  },
+  {
+    title: "Checklists",
+    description: "Making compliance work manageable.",
+    href: "/projects/vanta-checklists",
+    imagePath: "/images/vanta-checklists.jpg",
+    year: "2022",
+    tags: ["Product Design", "Enterprise", "Security"],
+    category: "intelligence"
+  },
+  {
+    title: "Upperstudy",
+    description: "Design apprentice & lead · 2020-21",
+    href: "/projects/upperstudy",
+    imagePath: "/images/upperstudy.jpg",
+    year: "2021",
+    isHeader: true
   },
   {
     title: "Ethos",
-    description: "Design system foundation",
+    description: "A new approach to college admissions.",
     href: "/projects/ethos",
-    imagePath: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00",
-    year: "2023",
-    buttonText: 'View samples'
+    imagePath: "/images/ethos.jpg",
+    year: "2021",
+    tags: ["Product Design", "Education"],
+    category: "intelligence"
   },
   {
     title: "Bedrock OS",
-    description: "Operating system design",
-    href: "/projects/bedrock-os",
-    imagePath: "https://images.unsplash.com/photo-1629654297299-c8506221ca97",
-    year: "2023",
-    buttonText: 'View samples'
-  },
-  {
-    title: "Vanta Platform",
-    description: "Security platform redesign",
-    href: "/projects/vanta-platform",
-    imagePath: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f",
-    year: "2022",
-    buttonText: 'Get in touch'
-  },
-  {
-    title: "Vanta Home",
-    description: "Homepage redesign",
-    href: "/projects/vanta-home",
-    imagePath: "https://images.unsplash.com/photo-1517292987719-0369a794ec0f",
-    year: "2022",
-    buttonText: 'View samples'
-  },
-  {
-    title: "Vanta Checklists",
-    description: "Task management system",
-    href: "/projects/vanta-checklists",
-    imagePath: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b",
-    year: "2022",
-    buttonText: 'View samples'
+    description: "A new operating system for schools.",
+    href: "/projects/bedrock",
+    imagePath: "/images/bedrock.jpg",
+    year: "2021",
+    tags: ["Product Design", "Education"],
+    category: "intelligence"
   }
 ];

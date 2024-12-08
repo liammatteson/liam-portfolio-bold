@@ -1,5 +1,3 @@
-"use client";
-
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import debounce from 'lodash/debounce';
@@ -7,7 +5,8 @@ import debounce from 'lodash/debounce';
 const sections = [
   { id: 'copilot', label: 'Copilot' },
   { id: 'antimetal', label: 'Antimetal' },
-  { id: 'vanta', label: 'Vanta' }
+  { id: 'vanta', label: 'Vanta' },
+  { id: 'upperstudy', label: 'Upperstudy' }
 ];
 
 export function ProjectSectionNav() {
@@ -105,6 +104,7 @@ export function ProjectSectionNav() {
             />
           ))}
         </div>
+
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -114,9 +114,10 @@ export function ProjectSectionNav() {
               transition={{ duration: 0.2 }}
               className="absolute left-[calc(100%+8px)] top-1/2 -translate-y-1/2 bg-[#f5f5f5] border border-[#E8EAEE] rounded-md p-2"
             >
-              {sections.map(section => (
-                <div key={section.id} className="w-full">
+              <div className="flex flex-col gap-2">
+                {sections.map(section => (
                   <button
+                    key={section.id}
                     onClick={(e) => {
                       e.stopPropagation();
                       scrollToSection(section.id);
@@ -129,8 +130,8 @@ export function ProjectSectionNav() {
                   >
                     {section.label}
                   </button>
-                </div>
-              ))}
+                ))}
+              </div>
             </motion.div>
           )}
         </AnimatePresence>

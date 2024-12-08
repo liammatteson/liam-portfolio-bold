@@ -24,7 +24,7 @@ export function Nav() {
   };
 
   const Content = () => (
-    <div className="max-w-[528px] mx-auto px-6">
+    <div className="max-w-[600px] mx-auto px-6">
       <div className="flex items-center justify-between h-[72px]">
         <div className="w-[90px] sm:w-[120px] flex items-center">
           <Logo />

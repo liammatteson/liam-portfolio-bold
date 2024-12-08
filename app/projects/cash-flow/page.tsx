@@ -23,7 +23,7 @@ export default function CashFlowPage() {
   return (
     <div className="min-h-screen bg-white">
       <Nav />
-      <div className="max-w-[528px] mx-auto">
+      <div className="max-w-[600px] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}

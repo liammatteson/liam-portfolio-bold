@@ -12,14 +12,14 @@ interface CardImageProps {
 export function CardImage({ href, imagePath, variant = 'default' }: CardImageProps) {
   return (
     <motion.div 
-      className="w-full aspect-[448/272] relative overflow-hidden rounded-[4px]"
+      className="w-full aspect-[448/272] relative overflow-hidden rounded-[4px] shadow-[0px_0px_0px_1px_rgba(0,0,0,0.08)]"
       layoutId={`project-image-${href}`}
     >
       <Image
         src={imagePath}
         alt="Project preview"
         fill
-        className="object-cover"
+        className="object-cover scale-[1.02]"
         priority
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         quality={90}

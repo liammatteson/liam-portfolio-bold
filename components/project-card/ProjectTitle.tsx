@@ -22,17 +22,16 @@ export function ProjectTitle({ title, year, isExpanded = false }: ProjectTitlePr
       className="flex justify-between items-center"
       layout
       transition={springTransition}
-      style={{ color: '#123727' }}
     >
       <motion.h1 
-        className={`${isExpanded ? 'text-[16px]' : 'text-[14px]'} leading-[24px] font-sans font-medium`}
+        className={`${isExpanded ? 'text-[16px]' : 'text-[14px]'} leading-[24px] font-sans font-medium text-[#123727]`}
         layout="position"
         transition={springTransition}
       >
         {title}
       </motion.h1>
       <motion.span 
-        className={`${isExpanded ? 'text-[16px]' : 'text-[14px]'} leading-[24px] font-sans`}
+        className={`${isExpanded ? 'text-[16px]' : 'text-[14px]'} leading-[24px] font-sans font-medium text-[#6D7468]`}
         layout="position"
         transition={springTransition}
       >

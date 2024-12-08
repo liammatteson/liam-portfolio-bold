@@ -9,6 +9,7 @@ export function ViewportBlur() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
+      style={{ willChange: 'transform', position: 'sticky' }}
     >
       <div />
       <div />

@@ -46,13 +46,14 @@
 }
 
 .gradient-blur {
-  position: fixed;
+  position: sticky;
   z-index: 5;
   bottom: 0;
   left: 0;
   right: 0;
   height: 100px;
   pointer-events: none;
+  margin-top: -100px;
 }
 
 .gradient-blur > div,

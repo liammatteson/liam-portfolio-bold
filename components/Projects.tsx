@@ -61,7 +61,7 @@ export function Projects() {
               <div 
                 className="w-[24px] h-[24px] rounded-[5px] bg-[lightgray] bg-cover bg-no-repeat bg-center shadow-[0px_10.286px_10.286px_-1.286px_rgba(14,63,126,0.04),0px_5.143px_5.143px_-1.286px_rgba(14,63,126,0.04),0px_0.857px_0.857px_-0.429px_rgba(14,63,126,0.04),0px_2.571px_2.571px_-1.286px_rgba(14,63,126,0.04),0px_0.429px_0.429px_-0.214px_rgba(14,63,126,0.04),0px_0px_0px_0.429px_rgba(14,63,126,0.08)]"
                 style={{
-                  backgroundImage: `url('/images/copilotIcon.PNG')`
+                  backgroundImage: `url('/images/CopilotIcon.png')`
                 }}
               />
               <div className="pt-[4px]">Design lead at <span className="underline decoration-[#E8EAEE] decoration-[2px] underline-offset-[3px] [text-decoration-skip-ink:none] hover:bg-[#E8EAEE] transition-colors duration-150 rounded-sm">Copilot Money</span></div>

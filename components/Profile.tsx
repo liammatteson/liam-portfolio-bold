@@ -23,8 +23,8 @@ export function Profile() {
     >
       <Title />
       <AnimatedText 
-        className="font-serif" 
-        text="Transforming ambiguity into clarity, shipping quality software fast through creativity, craft, and systems." 
+        className="[font-family:var(--font-serif)] text-[22px] leading-[36px] text-[#6B7467] tracking-[-0.22px]"
+        text="Transforming ambiguity into clarity – shipping quality software with precision through creativity, conviction, craft, and relentless iteration."
       />
       <Navigation />
     </motion.div>

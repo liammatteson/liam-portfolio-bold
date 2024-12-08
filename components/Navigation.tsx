@@ -32,12 +32,12 @@ export function Navigation() {
     timeoutRef.current = setTimeout(() => {
       setHoveredLink(null);
       setIsLeaving(false);
-    }, 2000);
+    }, 1000);
   };
 
   return (
     <motion.div 
-      className="mb-12 flex justify-center relative"
+      className="mb-20 flex justify-center relative"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
@@ -55,25 +55,35 @@ export function Navigation() {
           <Link
             key={link}
             href={`/${link.toLowerCase()}`}
-            className="h-8 flex items-center text-[16px] leading-6 text-[#6D7468] hover:text-gray-900 transition-colors px-2 font-sans font-medium relative"
+            className="h-8 flex items-center text-[16px] leading-6 text-[#6D7468] px-2 font-sans font-medium relative"
             onMouseEnter={() => handleMouseEnter(link)}
           >
-            <span className="decoration-[#f5f5f5] decoration-2 underline underline-offset-[3px]">{link}</span>
+            <motion.span 
+              animate={{ 
+                color: hoveredLink === link ? '#111827' : '#6D7468'
+              }}
+              transition={{
+                duration: 0.2,
+                ease: "easeInOut"
+              }}
+              className="underline decoration-[#E8EAEE] decoration-[2px] underline-offset-[3px] [text-decoration-skip-ink:none]"
+            >
+              {link}
+            </motion.span>
             <AnimatePresence>
               {hoveredLink === link && (
                 <motion.div
                   layoutId="highlight"
-                  className="absolute inset-0 bg-[#f5f5f5] rounded-[2px] -z-10"
+                  className="absolute inset-0 bg-[#E8EAEE] rounded-[2px] -z-10"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  exit={{ opacity: isLeaving ? 0 : 1 }}
-                  transition={{ 
+                  exit={{ opacity: 0 }}
+                  transition={{
                     type: "spring",
-                    bounce: 0.15,
-                    duration: 0.5,
+                    stiffness: 400,
+                    damping: 30,
                     opacity: {
-                      duration: isLeaving ? 0.3 : 0.15,
-                      ease: "easeInOut"
+                      duration: 0.2
                     }
                   }}
                 />

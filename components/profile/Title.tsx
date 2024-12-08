@@ -10,7 +10,7 @@ export function Title() {
   return (
     <>
       <motion.h1 
-        className="text-[16px] leading-[24px] font-sans font-semibold text-[#123727]"
+        className="text-[18px] leading-[24px] font-serif font-semibold text-[#123727]"
         initial={{ opacity: 0, filter: "blur(12px)", y: 24 }}
         animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
         transition={{
@@ -23,7 +23,7 @@ export function Title() {
       </motion.h1>
       
       <motion.div 
-        className="relative inline-block mt-1"
+        className="relative inline-block"
         initial={{ opacity: 0, filter: "blur(12px)", y: 24 }}
         animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
         transition={{
@@ -34,7 +34,7 @@ export function Title() {
         }}
       >
         <motion.span 
-          className="text-[14px] leading-[24px] font-sans text-[#123727] relative z-10"
+          className="text-[14px] leading-[24px] font-sans text-[#6D7468] relative z-10"
           onHoverStart={() => setIsHovered(true)}
           onHoverEnd={() => setIsHovered(false)}
         >

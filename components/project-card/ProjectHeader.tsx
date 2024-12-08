@@ -26,14 +26,14 @@ export function ProjectHeader({ title, year, isExpanded = false, variant = 'defa
       style={{ color: '#123727' }}
     >
       <motion.h1 
-        className={`${isExpanded ? 'text-[16px]' : 'text-[14px]'} leading-[24px] font-sans font-medium`}
+        className="text-[14px] leading-[24px] font-sans font-medium"
         layout="position"
         transition={springTransition}
       >
         {title}
       </motion.h1>
       <motion.span 
-        className={`${isExpanded ? 'text-[16px]' : 'text-[14px]'} leading-[24px] font-sans`}
+        className={`${isExpanded ? 'text-[16px]' : 'text-[14px]'} leading-[24px] font-sans text-[#6B7467]`}
         layout="position"
         transition={springTransition}
       >

@@ -2,16 +2,16 @@ import type { Project } from './types';
 
 export const projects: Project[] = [
   {
-    title: "Copilot Cash Flow",
+    title: "Cash Flow",
     description: "Financial management platform",
     href: "/projects/copilot-cash-flow",
     imagePath: "/images/CashFlow.jpg",
-    year: "2024",
+    year: "Product Design · Prototyping",
     variant: 'primary',
     buttonText: 'Read essay'
   },
   {
-    title: "Copilot Tags",
+    title: "Tags",
     description: "Smart transaction categorization",
     href: "/projects/copilot-tags",
     imagePath: "https://images.unsplash.com/photo-1512075135822-67cdd9dd7314",
@@ -19,7 +19,7 @@ export const projects: Project[] = [
     buttonText: 'Read essay'
   },
   {
-    title: "Copilot Apple Card",
+    title: "Apple Card",
     description: "Apple Card integration",
     href: "/projects/copilot-apple-card",
     imagePath: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d",
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     buttonText: 'View samples'
   },
   {
-    title: "Copilot Connections",
+    title: "Connections",
     description: "Account management system",
     href: "/projects/copilot-connections",
     imagePath: "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
@@ -35,7 +35,7 @@ export const projects: Project[] = [
     buttonText: 'View samples'
   },
   {
-    title: "Copilot Mint Import",
+    title: "Mint Import",
     description: "Data migration platform",
     href: "/projects/copilot-mint-import",
     imagePath: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d",
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     buttonText: 'Read essay'
   },
   {
-    title: "Copilot Onboarding",
+    title: "Onboarding",
     description: "User onboarding experience",
     href: "/projects/copilot-onboarding",
     imagePath: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     buttonText: 'View samples'
   },
   {
-    title: "Copilot Intelligence",
+    title: "Intelligence",
     description: "AI-powered insights",
     href: "/projects/copilot-intelligence",
     imagePath: "https://images.unsplash.com/photo-1488229297570-58520851e868",

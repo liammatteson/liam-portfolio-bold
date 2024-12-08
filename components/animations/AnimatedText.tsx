@@ -11,7 +11,7 @@ export function AnimatedText({ text, className = '' }: AnimatedTextProps) {
   const words = text.split(" ");
   
   return (
-    <motion.p className={`text-[#6D7468] max-w-[720px] mx-auto mt-12 mb-12 text-[20px] leading-[32px] flex flex-wrap justify-center gap-x-[0.25em] font-serif ${className}`}>
+    <motion.p className={`text-[#6D7468] max-w-[720px] mx-auto mt-12 mb-12 flex flex-wrap justify-center gap-x-[0.25em] ${className}`}>
       {words.map((word, index) => (
         <motion.span
           key={index}

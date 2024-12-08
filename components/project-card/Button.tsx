@@ -5,9 +5,10 @@ import { motion } from "framer-motion";
 
 interface ButtonProps {
   buttonText?: 'Read essay' | 'View samples' | 'Get in touch';
+  isHovered?: boolean;
 }
 
-export function Button({ buttonText = 'View samples' }: ButtonProps) {
+export function Button({ buttonText = 'View samples', isHovered = false }: ButtonProps) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -15,8 +16,8 @@ export function Button({ buttonText = 'View samples' }: ButtonProps) {
       className="mt-1 flex"
     >
       <motion.button
-        whileHover={{ gap: '12px' }}
-        className="h-[40px] px-4 bg-[#EBEBEB] rounded-[4px] inline-flex items-center justify-center gap-2 text-[14px] text-[#123727] font-sans font-medium transition-colors hover:bg-[#E2E2E2] w-full"
+        animate={{ gap: isHovered ? '12px' : '8px' }}
+        className={`h-[40px] px-4 rounded-[4px] inline-flex items-center justify-center gap-2 text-[14px] font-sans font-medium transition-colors ${isHovered ? 'text-[#123727]' : 'text-[#666666]'} w-full`}
       >
         <span>{buttonText}</span>
         <ArrowRight className="w-4 h-4" />

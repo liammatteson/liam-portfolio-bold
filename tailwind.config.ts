@@ -10,7 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['var(--font-newsreader)'],
+        serif: ['var(--font-serif)'],
+        'serif-medium': ['var(--font-serif-medium)'],
       },
       colors: {
         primary: '#123727',    // Primary text color

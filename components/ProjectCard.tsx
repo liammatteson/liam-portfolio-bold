@@ -13,6 +13,7 @@ interface ProjectCardProps extends Project {}
 export function ProjectCard({ title, description, href, imagePath, year, variant, buttonText }: ProjectCardProps) {
   const router = useRouter();
   const [isClicked, setIsClicked] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     router.prefetch(href);
@@ -29,24 +30,26 @@ export function ProjectCard({ title, description, href, imagePath, year, variant
   return (
     <motion.div
       onClick={handleClick}
+      onHoverStart={() => setIsHovered(true)}
+      onHoverEnd={() => setIsHovered(false)}
       initial={{ boxShadow: defaultShadow }}
       whileHover={!isClicked ? { boxShadow: hoverShadow } : {}}
-      className="cursor-pointer rounded-[8px] bg-[color(display-p3_0.99_0.99_0.99)] p-1 transition-shadow duration-300"
+      className="cursor-pointer rounded-[8px] bg-white p-1 transition-shadow duration-300"
       layoutId={`project-card-${href}`}
     >
       <motion.div 
-        className="relative" 
+        className="relative flex flex-col" 
         layoutId={`project-content-${href}`}
       >
-        <CardImage href={href} imagePath={imagePath} variant={variant} />
         <motion.div 
-          className="absolute top-0 left-0 right-0 pt-3 px-4"
+          className="px-[12px] pt-[6px] pb-[8px]"
           layoutId={`project-header-${href}`}
         >
           <ProjectHeader title={title} year={year} />
         </motion.div>
+        <CardImage href={href} imagePath={imagePath} variant={variant} />
       </motion.div>
-      <Button buttonText={buttonText} />
+      <Button buttonText={buttonText} isHovered={isHovered} />
     </motion.div>
   );
 }

@@ -352,10 +352,7 @@ export function Projects() {
               <div id="vanta" className="scroll-mt-[120px] space-y-6">
                 <motion.div variants={itemVariants} className="space-y-6">
                   <ProjectCard {...projects.find(p => p.title === "Platform & System Design")!} />
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <ProjectCard {...projects.find(p => p.title === "Checklists")!} />
-                    <ProjectCard {...projects.find(p => p.title === "Home")!} />
-                  </div>
+                  <ProjectCard {...projects.find(p => p.title === "Home")!} />
                 </motion.div>
               </div>
             </motion.div>

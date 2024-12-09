@@ -8,21 +8,18 @@ export default function AntimetalPage() {
       title="Antimetal Launch"
       year="2023"
       href="/projects/antimetal-launch"
-      imagePath="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80"
-      description="A comprehensive product launch campaign for Antimetal, including brand identity, marketing materials, and digital presence development."
-      features={[
-        "Brand identity system",
-        "Marketing website",
-        "Social media campaign",
-        "Product documentation",
-        "Launch event materials"
+      imagePath="/images/AM 1.png"
+      description="I was responsible for the UI architecture, user experience, and interface design of Antimetal 1.0 and 2.0. Antimetal aims to cut AWS costs by monitoring and learning your usage patterns to uncover savings opportunities."
+      features={[]}
+      technologies={[]}
+      additionalImages={[
+        "/images/AM 2.png",
+        "/images/AM 3.png",
+        "/images/AM 4.png"
       ]}
-      technologies={[
-        "Next.js for website",
-        "Figma for design",
-        "Framer Motion for animations",
-        "Contentful for CMS",
-        "Vercel for deployment"
+      sideByImages={[
+        "/images/AM 5.png",
+        "/images/AM 6.png"
       ]}
     />
   );

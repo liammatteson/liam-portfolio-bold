@@ -13,6 +13,8 @@ interface ProjectTemplateProps {
   description: string;
   features: string[];
   technologies: string[];
+  additionalImages?: string[];
+  sideByImages?: string[];
 }
 
 export function ProjectTemplate({
@@ -22,18 +24,29 @@ export function ProjectTemplate({
   imagePath,
   description,
   features,
-  technologies
+  technologies,
+  additionalImages,
+  sideByImages
 }: ProjectTemplateProps) {
+  const showDetails = features.length > 0 || technologies.length > 0;
+
   return (
     <ProjectLayout>
       <ProjectHeaderSection title={title} year={year} />
-      <ProjectMediaSection title={title} imagePath={imagePath} />
-      <ProjectDetailsSection
-        title={title}
+      <ProjectMediaSection 
+        title={title} 
+        imagePath={imagePath} 
+        additionalImages={additionalImages}
         description={description}
-        features={features}
-        technologies={technologies}
+        sideByImages={sideByImages}
       />
+      {showDetails && (
+        <ProjectDetailsSection
+          title={title}
+          features={features}
+          technologies={technologies}
+        />
+      )}
     </ProjectLayout>
   );
 }

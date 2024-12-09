@@ -4,19 +4,19 @@ export const projects: Project[] = [
   {
     title: "Cash Flow",
     description: "Financial management platform",
-    href: "/projects/copilot-cash-flow",
+    href: "https://changelog.copilot.money/log/cash-flow",
     imagePath: "/images/CashFlow.jpg",
     year: "2024",
     variant: 'primary',
-    buttonText: 'Read essay'
+    buttonText: 'View more'
   },
   {
     title: "Tags",
     description: "Smart transaction categorization",
-    href: "/projects/copilot-tags",
+    href: "https://x.com/copilotmoney/status/1800250024175312937/video/1",
     imagePath: "/images/Tags.jpg",
     year: "2024",
-    buttonText: 'Read essay'
+    buttonText: 'View more'
   },
   {
     title: "Apple Card",
@@ -37,18 +37,18 @@ export const projects: Project[] = [
   {
     title: "Mint Import",
     description: "Data migration platform",
-    href: "/projects/copilot-mint-import",
+    href: "https://mint.copilot.money/",
     imagePath: "/images/optimized/Mint import.jpg",
-    year: "2024",
-    buttonText: 'View samples'
+    year: "2023",
+    buttonText: 'View more'
   },
   {
     title: "Onboarding",
     description: "User onboarding experience",
-    href: "/projects/copilot-onboarding",
-    imagePath: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
+    href: "https://changelog.copilot.money/log/onboarding-for-mac",
+    imagePath: "/images/optimized/Onboarding.jpg",
     year: "2023",
-    buttonText: 'View samples'
+    buttonText: 'View more'
   },
   {
     title: "Dashboard, Guardrails, Onboarding",
@@ -81,26 +81,18 @@ export const projects: Project[] = [
   {
     title: "Platform & System Design",
     description: "Design system foundation",
-    href: "/projects/vanta-platform",
-    imagePath: "/images/projects/platform.png",
+    href: "mailto:liamfmatteson@gmail.com",
+    imagePath: "/images/System design.jpg",
     year: "2023",
-    buttonText: 'View samples'
+    buttonText: 'Reach out for more'
   },
   {
     title: "Home",
     description: "Product dashboard",
-    href: "/projects/vanta-home",
-    imagePath: "/images/projects/home.png",
+    href: "https://www.vanta.com/resources/vantas-new-look-a-customer-based-redesign",
+    imagePath: "/images/Home.jpg",
     year: "2023",
-    buttonText: 'View samples'
-  },
-  {
-    title: "Checklists",
-    description: "Security checklist builder",
-    href: "/projects/vanta-checklists",
-    imagePath: "/images/projects/checklists.png",
-    year: "2023",
-    buttonText: 'View samples'
+    buttonText: 'View more'
   },
   {
     title: "Upperstudy",

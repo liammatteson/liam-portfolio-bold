@@ -54,7 +54,7 @@ export const projects: Project[] = [
     title: "Dashboard, Guardrails, Onboarding",
     description: "A new approach to managing LLM risk.",
     href: "/projects/antimetal-launch",
-    imagePath: "/images/Antimetal Dashboard.jpg",
+    imagePath: "/images/optimized/Antimetal Dashboard.jpg",
     year: "2024",
     tags: ["Product Design", "AI/ML", "Enterprise"],
     category: "intelligence",

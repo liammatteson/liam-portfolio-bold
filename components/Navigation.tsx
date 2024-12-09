@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
 
-const links = ["Connect", "About", "People", "Now"];
+const links = ["Connect", "About", "Now"];
 
 export function Navigation() {
   const [hoveredLink, setHoveredLink] = useState<string | null>(null);

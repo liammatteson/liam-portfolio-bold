@@ -38,7 +38,7 @@ export const projects: Project[] = [
     title: "Mint Import",
     description: "Data migration platform",
     href: "/projects/copilot-mint-import",
-    imagePath: "/images/projects/mint-import.png",
+    imagePath: "/images/optimized/Mint import.jpg",
     year: "2024",
     buttonText: 'View samples'
   },

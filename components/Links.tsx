@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-const links = ["Connect", "About", "People", "Now"];
+const links = ["Connect", "About", "Now"];
 
 export function Links() {
   return (

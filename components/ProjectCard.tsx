@@ -29,9 +29,20 @@ const itemVariants = {
 
 interface ProjectCardProps extends Project {
   isHeader?: boolean;
+  links?: any;
 }
 
-export function ProjectCard({ title, description, href, imagePath, year, variant, buttonText, isHeader }: ProjectCardProps) {
+export function ProjectCard({ 
+  title, 
+  description, 
+  href, 
+  imagePath, 
+  year, 
+  variant, 
+  buttonText, 
+  isHeader,
+  links 
+}: ProjectCardProps) {
   const router = useRouter();
   const [isClicked, setIsClicked] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -107,7 +118,7 @@ export function ProjectCard({ title, description, href, imagePath, year, variant
       onHoverEnd={() => setIsHovered(false)}
       initial={{ boxShadow: defaultShadow }}
       whileHover={!isClicked ? { boxShadow: hoverShadow } : {}}
-      className="cursor-pointer rounded-[8px] bg-white p-1 transition-shadow duration-300 overflow-hidden"
+      className="cursor-pointer rounded-[8px] bg-white p-1 transition-shadow duration-200 overflow-hidden"
       layoutId={`project-card-${href}`}
     >
       <motion.div 
@@ -118,7 +129,13 @@ export function ProjectCard({ title, description, href, imagePath, year, variant
           className="px-[12px] pt-[6px] pb-[8px]"
           layoutId={`project-header-${href}`}
         >
-          <ProjectHeader title={title} year={year} />
+          <ProjectHeader 
+            title={title} 
+            year={year} 
+            isExpanded={isHovered} 
+            variant={variant}
+            links={links || []}
+          />
         </motion.div>
         <CardImage href={href} imagePath={imagePath} variant={variant} />
         {!isHeader && (

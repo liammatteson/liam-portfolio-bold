@@ -1,19 +1,16 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import debounce from 'lodash/debounce';
 
 const sections = [
   { id: 'copilot', label: 'Copilot' },
   { id: 'antimetal', label: 'Antimetal' },
-  { id: 'vanta', label: 'Vanta' },
-  { id: 'upperstudy', label: 'Upperstudy' }
+  { id: 'vanta', label: 'Vanta' }
 ];
 
 export function ProjectSectionNav() {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('');
+  const [activeSection, setActiveSection] = useState('copilot');
   const navRef = useRef<HTMLDivElement>(null);
-  const lastScrollPosition = useRef(0);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -29,14 +26,6 @@ export function ProjectSectionNav() {
   const determineActiveSection = useCallback(() => {
     const scrollPosition = window.scrollY;
     const viewportHeight = window.innerHeight;
-    const threshold = 100; // Minimum scroll distance to trigger a change
-
-    // Don't update if the scroll change is too small
-    if (Math.abs(scrollPosition - lastScrollPosition.current) < threshold) {
-      return;
-    }
-
-    lastScrollPosition.current = scrollPosition;
     
     let closestSection = '';
     let closestDistance = Infinity;
@@ -61,14 +50,11 @@ export function ProjectSectionNav() {
   }, [activeSection]);
 
   useEffect(() => {
-    const debouncedScroll = debounce(determineActiveSection, 100);
-    
-    window.addEventListener('scroll', debouncedScroll);
+    window.addEventListener('scroll', determineActiveSection, { passive: true });
     determineActiveSection(); // Initial check
     
     return () => {
-      window.removeEventListener('scroll', debouncedScroll);
-      debouncedScroll.cancel();
+      window.removeEventListener('scroll', determineActiveSection);
     };
   }, [determineActiveSection]);
 
@@ -86,19 +72,19 @@ export function ProjectSectionNav() {
   return (
     <div 
       ref={navRef}
-      className="hidden sm:block fixed left-4 top-1/2 -translate-y-1/2 z-10"
+      className="hidden sm:block fixed left-2 top-1/2 -translate-y-1/2 z-10"
     >
       <div 
         className="cursor-pointer relative"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <div className="flex flex-col gap-2 py-[8px] px-2 hover:bg-[#f5f5f5] rounded transition-colors duration-200 ease-in-out">
+        <div className="flex flex-col gap-1.5 py-[8px] px-2 hover:bg-[rgba(20,27,20,0.08)] rounded transition-colors duration-200 ease-in-out">
           {sections.map((section, i) => (
             <div 
               key={i}
               className={`w-[12px] h-[1.5px] ${
                 activeSection === section.id 
-                  ? 'bg-[#8A9085]' 
+                  ? 'bg-[#A5AAA1]' 
                   : 'bg-[#D8DAE0]'
               }`}
             />
@@ -114,7 +100,7 @@ export function ProjectSectionNav() {
               transition={{ duration: 0.2 }}
               className="absolute left-[calc(100%+8px)] top-1/2 -translate-y-1/2 bg-[#f5f5f5] border border-[#E8EAEE] rounded-md p-2"
             >
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-0.5">
                 {sections.map(section => (
                   <button
                     key={section.id}
@@ -124,8 +110,8 @@ export function ProjectSectionNav() {
                     }}
                     className={`text-[14px] leading-[16px] px-2 py-1 w-full text-left transition-all duration-200 ease-in-out ${
                       activeSection === section.id
-                        ? 'text-[#123727] font-medium bg-[#E8EAEE]'
-                        : 'text-[#6B7467] hover:text-[#123727] hover:bg-[#E8EAEE]'
+                        ? 'text-[#123727] font-medium bg-[rgba(20,27,20,0.08)]'
+                        : 'text-[#6B7467] hover:text-[#123727] hover:bg-[rgba(20,27,20,0.08)]'
                     } whitespace-nowrap rounded`}
                   >
                     {section.label}

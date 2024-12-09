@@ -32,7 +32,7 @@ export function Navigation() {
     timeoutRef.current = setTimeout(() => {
       setHoveredLink(null);
       setIsLeaving(false);
-    }, 1000);
+    }, 250);
   };
 
   return (
@@ -66,7 +66,7 @@ export function Navigation() {
                 duration: 0.2,
                 ease: "easeInOut"
               }}
-              className="underline decoration-[#E8EAEE] decoration-[2px] underline-offset-[3px] [text-decoration-skip-ink:none]"
+              className="underline decoration-[#ECEDEC] decoration-[2px] underline-offset-[3px] [text-decoration-skip-ink:none]"
             >
               {link}
             </motion.span>
@@ -74,7 +74,7 @@ export function Navigation() {
               {hoveredLink === link && (
                 <motion.div
                   layoutId="highlight"
-                  className="absolute inset-0 bg-[#E8EAEE] rounded-[4px] -z-10"
+                  className="absolute inset-0 bg-[rgba(20,27,20,0.08)] rounded-[4px] -z-10"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}

@@ -7,5 +7,13 @@ export interface Project {
   imagePath: string;
   year: string;
   variant?: 'default' | 'primary';
-  buttonText?: 'Read essay' | 'View samples' | 'Get in touch';
+  buttonText?: string;
+  tags?: string[];
+  category?: string;
+  isHeader?: boolean;
+  links?: {
+    text: string;
+    href: string;
+    icon: string;
+  }[];
 }

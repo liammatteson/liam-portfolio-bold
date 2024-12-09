@@ -19,10 +19,11 @@ export function CardImage({ href, imagePath, variant = 'default' }: CardImagePro
         src={imagePath}
         alt="Project preview"
         fill
-        className="object-cover scale-[1.02]"
+        className="object-cover"
         priority
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        quality={90}
+        unoptimized
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 896px"
+        quality={100}
       />
     </motion.div>
   );

@@ -21,16 +21,16 @@ export const projects: Project[] = [
   {
     title: "Apple Card",
     description: "Apple Card integration",
-    href: "/projects/copilot-apple-card",
-    imagePath: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d",
+    href: "https://changelog.copilot.money/log/track-your-apple-card-apple-cash-and-savings",
+    imagePath: "/images/Apple Card.jpg",
     year: "2024",
     buttonText: 'View samples'
   },
   {
     title: "Intelligence",
     description: "Predictive insights platform",
-    href: "/projects/copilot-intelligence",
-    imagePath: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    href: "https://intelligence.copilot.money/",
+    imagePath: "/images/Copilot Intelligence.jpg",
     year: "2023",
     buttonText: 'View samples'
   },
@@ -51,21 +51,14 @@ export const projects: Project[] = [
     buttonText: 'View samples'
   },
   {
-    title: "Antimetal",
-    description: "Design Lead · 2023-24",
-    href: "/projects/antimetal",
-    imagePath: "/images/antimetal.jpg",
-    year: "2024",
-    isHeader: true
-  },
-  {
-    title: "Dashboard and Guardrails",
+    title: "Dashboard, Guardrails, Onboarding",
     description: "A new approach to managing LLM risk.",
     href: "/projects/antimetal-launch",
-    imagePath: "/images/antimetal-launch.jpg",
+    imagePath: "/images/Antimetal Dashboard.jpg",
     year: "2024",
     tags: ["Product Design", "AI/ML", "Enterprise"],
-    category: "intelligence"
+    category: "intelligence",
+    buttonText: "View samples"
   },
   {
     title: "Vanta",
@@ -82,25 +75,32 @@ export const projects: Project[] = [
     imagePath: "/images/vanta-platform.jpg",
     year: "2023",
     tags: ["Product Design", "Enterprise", "Security"],
-    category: "intelligence"
+    category: "intelligence",
+    buttonText: "View samples"
+  },
+  {
+    title: "Platform & System Design",
+    description: "Design system foundation",
+    href: "/projects/vanta-platform",
+    imagePath: "/images/projects/platform.png",
+    year: "2023",
+    buttonText: 'View samples'
   },
   {
     title: "Home",
-    description: "A new homepage for security and compliance.",
+    description: "Product dashboard",
     href: "/projects/vanta-home",
-    imagePath: "/images/vanta-home.jpg",
-    year: "2022",
-    tags: ["Product Design", "Enterprise", "Security"],
-    category: "intelligence"
+    imagePath: "/images/projects/home.png",
+    year: "2023",
+    buttonText: 'View samples'
   },
   {
     title: "Checklists",
-    description: "Making compliance work manageable.",
+    description: "Security checklist builder",
     href: "/projects/vanta-checklists",
-    imagePath: "/images/vanta-checklists.jpg",
-    year: "2022",
-    tags: ["Product Design", "Enterprise", "Security"],
-    category: "intelligence"
+    imagePath: "/images/projects/checklists.png",
+    year: "2023",
+    buttonText: 'View samples'
   },
   {
     title: "Upperstudy",
@@ -109,23 +109,5 @@ export const projects: Project[] = [
     imagePath: "/images/upperstudy.jpg",
     year: "2021",
     isHeader: true
-  },
-  {
-    title: "Ethos",
-    description: "A new approach to college admissions.",
-    href: "/projects/ethos",
-    imagePath: "/images/ethos.jpg",
-    year: "2021",
-    tags: ["Product Design", "Education"],
-    category: "intelligence"
-  },
-  {
-    title: "Bedrock OS",
-    description: "A new operating system for schools.",
-    href: "/projects/bedrock",
-    imagePath: "/images/bedrock.jpg",
-    year: "2021",
-    tags: ["Product Design", "Education"],
-    category: "intelligence"
   }
 ];

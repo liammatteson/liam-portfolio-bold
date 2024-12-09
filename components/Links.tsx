@@ -17,7 +17,7 @@ export function Links() {
         <Link
           key={item}
           href={`/${item.toLowerCase()}`}
-          className="h-8 flex items-center text-[16px] leading-6 text-gray-600 hover:text-gray-900 transition-colors border-b-2 border-[#D2D5D0]"
+          className="h-8 flex items-center text-[16px] leading-6 text-gray-600 hover:text-gray-900 transition-colors border-b-2 border-[#ECEDEC]"
         >
           {item}
         </Link>

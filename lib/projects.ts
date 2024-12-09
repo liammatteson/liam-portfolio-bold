@@ -55,7 +55,7 @@ export const projects: Project[] = [
     description: "A new approach to managing LLM risk.",
     href: "/projects/antimetal-launch",
     imagePath: "/images/optimized/Antimetal Dashboard.jpg",
-    year: "2024",
+    year: "2023",
     tags: ["Product Design", "AI/ML", "Enterprise"],
     category: "intelligence",
     buttonText: "View samples"
@@ -83,7 +83,7 @@ export const projects: Project[] = [
     description: "Design system foundation",
     href: "mailto:liamfmatteson@gmail.com",
     imagePath: "/images/System design.jpg",
-    year: "2023",
+    year: "2022",
     buttonText: 'Reach out for more'
   },
   {
@@ -91,7 +91,7 @@ export const projects: Project[] = [
     description: "Product dashboard",
     href: "https://www.vanta.com/resources/vantas-new-look-a-customer-based-redesign",
     imagePath: "/images/Home.jpg",
-    year: "2023",
+    year: "2022",
     buttonText: 'View more'
   },
   {

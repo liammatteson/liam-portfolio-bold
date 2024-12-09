@@ -256,7 +256,7 @@ export function Projects() {
                   <div 
                     className="w-[24px] h-[24px] rounded-[5px] bg-[lightgray] bg-[50%] bg-cover bg-no-repeat shadow-[0px_10.286px_10.286px_-1.286px_color(display-p3_0.1137_0.2431_0.4784/0.04),0px_5.143px_5.143px_-1.286px_color(display-p3_0.1137_0.2431_0.4784/0.04),0px_0.857px_0.857px_-0.429px_color(display-p3_0.1137_0.2431_0.4784/0.04),0px_2.571px_2.571px_-1.286px_color(display-p3_0.1137_0.2431_0.4784/0.04),0px_0.429px_0.429px_-0.214px_color(display-p3_0.1137_0.2431_0.4784/0.04),0px_0px_0px_0.429px_color(display-p3_0.1137_0.2431_0.4784/0.16)]"
                     style={{
-                      backgroundImage: `url('/images/antimetal.jpg')`
+                      backgroundImage: `url('/images/optimized/Antimetal.jpg')`
                     }}
                   />
                   <motion.span
